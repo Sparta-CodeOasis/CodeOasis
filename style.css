@@ -4,20 +4,52 @@ body {
     animation: gradientShift 15s ease infinite;
 }
 
+/* 자기소개 */
+.introduction {
+    margin: 30px 45px 30px 45px;
+    /* background-color: green; */
+}
+
+/* 자기소개 */
+.introduction_ {
+    margin: 30px 45px 30px 45px;
+    /* background-color: green; */
+}
+
+/* 들여쓰기 */
+.txtIndent {
+    /* background-color: magenta; */
+    text-indent: -25px;
+    margin-left: 30px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+
 /* Keyframes for the diagonal background animation */
 @keyframes gradientShift {
     0% {
         background-position: 0% 0%;
     }
+
     25% {
         background-position: 100% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     75% {
         background-position: 0% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
