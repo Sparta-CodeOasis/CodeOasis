@@ -7,14 +7,8 @@ body {
 /* 자기소개 */
 .introduction {
     margin: 30px 45px 30px 45px;
-    /* background-color: green; */
 }
 
-/* 자기소개 */
-.introduction_ {
-    margin: 30px 45px 30px 45px;
-    /* background-color: green; */
-}
 
 /* 들여쓰기 */
 .txtIndent {
