@@ -20,13 +20,14 @@
             </div>
         </nav>
     </header>
-
+    <input type="text" class="form-control mb-2" id="nickname-input" placeholder="성명을 남겨주세요">
+    <textarea class="form-control" id="comment-input" rows="3" placeholder="응원의 메세지 남겨주세요"></textarea>
     <main class="container my-5">
         <div class="card mb-4 shadow-sm">
             <div class="card-body text-center">
                 <img src="profile1.jpg" class="rounded-circle mb-3" alt="Person 1" style="width: 150px; height: 150px;">
                 <h2>박상원</h2>
-                <p>Title<br>Description</p>
+                <p>행동하는 개발자<br>안녕하세요 박상원입니다. 많은 응원의 메세지 부탁드립니다. 감사합니다.</p>
             </div>
         </div>
 
@@ -34,8 +35,7 @@
             <h3 class="mb-4">방명록</h3>
             <div class="form-group">
                 <input type="text" class="form-control mb-2" id="nickname-input" placeholder="성명을 남겨주세요">
-                <textarea class="form-control" id="comment-input" rows="3" placeholder="응원의 메세지 남겨주세요"></textarea>
-            </div>
+                <textarea class="form-control" id="comment-input" rows="3" placeholder="응원의 메세지 남겨주세요"></textarea>        </div>
             <button class="btn btn-primary" onclick="addComment()">제출하기</button>
         </section>
 
