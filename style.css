@@ -1,7 +1,7 @@
 /* Custom styles */
 
 body {
-    background-color: #f8f9fa;
+    background-color: linear-gradient(135deg, #f3a1a1, #f8d94d);
 }
 
 .navbar {
