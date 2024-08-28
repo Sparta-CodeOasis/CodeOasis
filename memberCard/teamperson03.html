@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Person 1 Profile</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body > header{
-            background: linear-gradient(135deg, #f3a1a1, #f8d94d);
-        }
-        body{
-            background: linear-gradient(135deg, #f3a1a1, #f8d94d);
-        }
-    </style>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <title>백엔드 개발자 로드맵</title>
+  </head>
 <body>
-    <header class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="../index.html">1조 코드 오아시스</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="btn btn-primary" href="../teamintroduce.html">팀 방명록</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">코드오아시스</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+  </nav>
+
+    <!-- Add margin to prevent content overlap -->
+    <div style="margin-top: 80px;"></div>
 
     <main class="container my-5">
         <div class="card mb-4 shadow-sm">
             <div class="card-body text-center">
-                <img src="../images/3profile.jpg" class="rounded-circle mb-3" alt="Person 1" style="width: 150px; height: 150px;">
+                <img src="../images/3profile.jpg" class="rounded-circle mb-3" alt="홍승재" style="width: 150px; height: 150px;">
                 <h2>홍승재</h2>
-                <p>안녕하세요~ 코딩초보 홍승재입니다.<br>
-                    항상 최선을 다하는 수강생이 되겠습니다!!<br>
-                    방명록 많이 남겨주세용~~
-                </p>
+                <p>팀장<br>항상 최선을 다하는 수강생이 되겠습니다!!</p>
             </div>
         </div>
 
@@ -45,7 +39,8 @@
             <h3 class="mb-4">방명록</h3>
             <div class="form-group">
                 <input type="text" class="form-control mb-2" id="nickname-input" placeholder="성명을 남겨주세요">
-                <textarea class="form-control" id="comment-input" rows="3" placeholder="응원의 메세지 남겨주세요"></textarea>        </div>
+                <textarea class="form-control" id="comment-input" rows="3" placeholder="응원의 메세지 남겨주세요"></textarea>      
+            </div>
             <button class="btn btn-primary" onclick="addComment()">제출하기</button>
         </section>
 
@@ -54,7 +49,6 @@
             <!-- Comments will appear here -->
         </section>
     </main>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
