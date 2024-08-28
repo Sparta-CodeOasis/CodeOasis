@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person 1 Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="../index.html"><span style="color:white">Code Oasis🏝️</span></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="../teamintroduce.html">팀 방명록</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body text-center">
+                <img src="../images/박상원image.png" class="rounded-circle mb-3" alt="Person 1"
+                    style="width: 150px; height: 150px;">
+                    <h3>박상원</h3>
+                    <h4>행동하는 개발자</h4>
+    
+                    <div class="introduction text-left">
+                        <h5>🎤 Who am I?</h5>
+                        <p class="txtIndent">🔈정보통신분야에서 일을 하다가 개발자가 되고싶어서 왔습니다.
+                            <br>많이 부족하지만 솔직하지 못할 수도 있지만 넓은 마음으로 이해해주신다면 정말 감사할꺼 같습니다.
+                            <br>저도 변할 수 있도록 노력하겠습니다.
+                        </p>
+    
+                        <h5>🎤 My Strengths</h5>
+                        <p class="txtIndent"> 🔈추진력
+                            <br>저는 강한 추진력을 가지고 생활합니다.
+                            <br>하나에 꽂히면 깊이 파고들며 빠르게 문제를 해결하는 게 제 장점입니다.
+                        </p>
+    
+                        <h5>🎤 My Collaboration Style</h5>
+                        <p class="txtIndent">🔈더 나은 방법을 찾아보고 토론하는 것을 좋아합니다.
+                            <br>역량과 가치, 방향성 등 여러 가지 요소를 종합적으로 함께 판단하고 새로운 의견에 호응하는 편입니다.
+                            <br>제 이야기를 들어주셔서 감사합니다.
+                        </p>
+    
+                        <h5>💻 블로그 주소</h5>
+                        <p>&emsp;&ensp;<a href="https://whlsls3377.tistory.com/" target="_blank">https://whlsls3377.tistory.com/</a></p>
+                    </div>
+                </div>
+            </div>
+
+        <section class="guestbook">
+            <h3 class="mb-4">방명록</h3>
+            <div class="form-group">
+                <input type="text" class="form-control mb-2" id="nickname-input" placeholder="성명을 남겨주세요">
+                <textarea class="form-control" id="comment-input" rows="3" placeholder="응원의 메세지 남겨주세요"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="addComment()">제출하기</button>
+        </section>
+
+        <section class="comments mt-5" id="comments">
+            <h3>코멘트</h3>
+            <!-- Comments will appear here -->
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts.js"></script>
+</body>
+
+</html>
