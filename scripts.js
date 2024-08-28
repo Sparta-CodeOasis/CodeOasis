@@ -59,9 +59,6 @@ function addComment() {
 
         nicknameInput.value = ''; // Clear the nickname input field
         commentInput.value = ''; // Clear the comment input field
-
-        //새로 추가된 코멘트로 이동
-        scrollToElement(newComment);
     }
 }
 
@@ -108,8 +105,4 @@ function saveComment(commentContent, textArea, saveButton) {
     } else {
         alert('코멘트를 채워주세요');
     }
-}
-
-function scrollToElement(element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
