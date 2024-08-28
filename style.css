@@ -40,7 +40,6 @@ body {
 	color: #3a3f52;
 }
 
-<<<<<<< HEAD
 /* 자기소개 */
 .introduction {
     margin: 30px 45px 30px 45px;
@@ -84,11 +83,6 @@ body {
     100% {
         background-position: 0% 0%;
     }
-=======
-h2 {
-	font-size: 44px;
-	font-weight: 700;
->>>>>>> 043b52b3f344c6d960714d569c73f6e89a71a089
 }
 
 h3 {
@@ -543,14 +537,13 @@ footer h5 {
 	margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
 .card-body img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
-=======
+
 footer p {
 	font-size: 12px;
 	font-weight: 300;
@@ -763,4 +756,3 @@ footer small {
 		margin-left: 10px;
 	}
 }
->>>>>>> 043b52b3f344c6d960714d569c73f6e89a71a089
