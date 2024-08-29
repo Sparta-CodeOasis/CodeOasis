@@ -53,9 +53,8 @@
 }
 
 main {
-    padding-top: 50px; /* 헤더 높이만큼 패딩 추가 */
+    padding-top: 80px;
 }
-
 li {
 	list-style: none;
 }
@@ -98,8 +97,11 @@ li {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	color: #3a3f52;
+    font-family: 'Roboto', sans-serif;
+    color: #3a3f52;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -181,15 +183,18 @@ section {
 ===============================================*/
 
 .custom-navbar {
-	background-color: #ffffff !important;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .09);
-	height: 70px;
-	max-height: 70px;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+
+.navbar-brand {
+    font-weight: bold;
 }
 
 .navbar-toggler {
-	font-size: 38px;
-	background-color: transparent;
+    font-size: 28px;
+    color: #0095f7;
 }
 
 .navbar-toggler:focus {
@@ -398,51 +403,194 @@ section {
 	border-radius: 50px;
 }
 
+.team-promise {
+    margin-top: 50px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.team-promise .callout {
+    padding: 20px;
+    border-left: 5px solid #0095f7;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.team-promise h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #3a3f52;
+}
+
+.team-promise ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.team-promise ul li {
+    font-size: 18px;
+    font-weight: 400;
+    color: #53627C;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.team-promise ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0095f7;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.callout h3 {
+    margin-bottom: 20px; /* 필요 시 조정 */
+}
+
+.callout ul {
+    margin-left: 20px; /* 필요 시 조정 */
+}
+/* 팀 소개 섹션 */
+.team-overview {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-overview h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team-overview p {
+    font-size: 18px;
+    color: #8da2b5;
+}
+
+/* 약속 섹션 */
+.team-promise {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-promise h3 {
+    font-size: 24px;
+    color: #0095f7;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.team-promise ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.team-promise ul li {
+    font-size: 18px;
+    color: #53627C;
+    margin-bottom: 10px;
+}
+
+/* 팀원 카드 */
 .team-member {
-	text-align: center;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	background-color: #ffffff;
-	margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬을 위해 추가 */
+    justify-content: space-between;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover; /* 이미지가 잘리지 않도록 조정 */
 }
 
 .team-member:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.team-member h3 {
-	font-size: 20px;
-	font-weight: 700;
-	color: #3a3f52;
-	margin-bottom: 10px;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .team-member h5 {
-	font-size: 16px;
-	font-weight: 400;
-	color: #8da2b5;
-	margin-bottom: 15px;
+    font-size: 20px;
+    color: #3a3f52;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .team-member p {
-	font-size: 14px;
-	color: #53627C;
-	line-height: 1.6;
+    font-size: 14px;
+    color: #53627C;
 }
 
-.profile-picture {
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	margin: 0 auto 15px;
-	border: 4px solid #0095f7;
+.team-member .btn {
+    margin-top: auto;
+    background-color: #0095f7;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
+
+.team-member .btn:hover {
+    background-color: #007bbf;
+}
+
+
+
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .card-text {
+    margin-bottom: 20px; 
+}
+
+.card .btn {
+    margin-top: auto;
+}
+
+.profile-img {
+    display: block;
+    margin: 0 auto; /* 중앙 정렬을 위해 상하 좌우 마진을 자동으로 설정 */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 .review-one {
 	background-image: url('images/profile-picture-one.jpg');
@@ -559,16 +707,16 @@ section {
 ===============================================*/
 
 footer {
-	background-color: #292c31;
-	padding: 60px 0;
-	color: #62656a;
+    background-color: #292c31;
+    color: #62656a;
+    padding: 40px 0;
 }
 
 footer h5 {
-	color: #aeb3bd;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	margin-bottom: 20px;
+    font-size: 16px;
+    color: #aeb3bd;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 footer p {
@@ -579,12 +727,26 @@ footer p {
 	padding: 0px;
 }
 
-footer li {
-	font-size: 14px;
-	font-weight: 300;
-	letter-spacing: .05em;
-	line-height: 1.5;
-	margin-bottom: 10px;
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #62656a;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #0095f7;
+}
+
+footer p {
+    font-size: 14px;
 }
 
 footer a {
