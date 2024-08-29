@@ -4,7 +4,7 @@ export const commentRepository = (supabase) => ({
             .from('comments')
             .select('*')
             .eq('board_id', boardId)
-            .order('created_at', { ascending: false });
+            .order('created_at', { ascending: true });
 
         if (error) {
             console.error('코멘트 조회 중 오류 발생 :', error);

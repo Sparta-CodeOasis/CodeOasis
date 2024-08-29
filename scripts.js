@@ -8,7 +8,7 @@ export function initializeComments(memberId, supabase) {
             const comments = await repository.getComments(memberId);
             const commentsDiv = document.getElementById('comments');
             commentsDiv.innerHTML = '';
-            comments.forEach(comment => addCommentToDOM(comment));
+            comments.forEach(comment => addCommentToDOM(comment, false));
         } catch (error) {
             console.error('댓글 로드 중 오류 발생:', error);
             alert('코멘트를 불러오는 중 오류가 발생했습니다');
@@ -18,7 +18,7 @@ export function initializeComments(memberId, supabase) {
     async function addComment(content, nickname) {
         try {
             const newComment = await repository.addComment(memberId, content, nickname);
-            addCommentToDOM(newComment);
+            addCommentToDOM(newComment, true);
             document.getElementById('nickname-input').value = '';
             document.getElementById('comment-input').value = '';
         } catch (error) {
@@ -27,7 +27,7 @@ export function initializeComments(memberId, supabase) {
         }
     }
 
-    function addCommentToDOM(comment) {
+    function addCommentToDOM(comment, shouldScroll = false) {
         const commentsDiv = document.getElementById('comments');
         const newComment = document.createElement('div');
         newComment.className = 'card mb-3 shadow-sm';
@@ -45,7 +45,9 @@ export function initializeComments(memberId, supabase) {
         `;
     
         commentsDiv.appendChild(newComment);
-        scrollToElement(newComment);
+        if (shouldScroll) {
+            scrollToElement(newComment);
+        }
     }
 
     function convertNewlinesToBreaks(text) {
