@@ -47,7 +47,12 @@
    //////////////////////////*/
 
 
+<<<<<<< HEAD
    .btn-white-text {
+=======
+
+.btn-white-text {
+>>>>>>> 050e226c6e4b1cb666cce51e13b73e50a7b5faab
     color: #ffffff !important;
 }
 
@@ -806,5 +811,6 @@ footer small {
 		margin-left: 10px;
 	}
 
-
 }
+
+ 
