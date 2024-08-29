@@ -53,7 +53,7 @@
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 40px;
 }
 li {
 	list-style: none;
@@ -459,8 +459,8 @@ section {
 }
 /* 팀 소개 섹션 */
 .team-overview {
-    text-align: center;
     margin-bottom: 50px;
+	padding-top: 20px; /* 팀 소개 섹션과 위의 간격을 줄이기 위해 20px로 설정 */
 }
 
 .team-overview h2 {
@@ -483,24 +483,36 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.team-promise .callout {
+    padding: 20px;
+    border-left: 5px solid #0095f7;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
 .team-promise h3 {
     font-size: 24px;
-    color: #0095f7;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #3a3f52;
+    text-align: center; /* 제목 가운데 정렬 */
 }
 
 .team-promise ul {
     list-style-type: none;
     padding-left: 0;
+    text-align: center; /* 목록 텍스트 가운데 정렬 */
 }
 
 .team-promise ul li {
     font-size: 18px;
+    font-weight: 400;
     color: #53627C;
     margin-bottom: 10px;
+    padding-left: 0; /* 패딩 제거하여 가운데 정렬이 깨지지 않도록 */
+    position: relative;
 }
-
 /* 팀원 카드 */
 .team-member {
     text-align: center;
