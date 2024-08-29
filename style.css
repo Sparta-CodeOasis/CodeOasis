@@ -136,7 +136,7 @@ b {
 }
 
 section {
-	padding: 100px 0px;
+	padding: 80px 0px;
 }
 
 .title-block {
@@ -402,7 +402,6 @@ section {
 	padding: 2px 12px;
 	border-radius: 50px;
 }
-
 .team-promise {
     margin-top: 50px; 
     padding-top: 20px; 
@@ -410,8 +409,6 @@ section {
     background-color: #f8f9fa; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
 
 .team-promise .callout {
     padding: 20px;
@@ -992,3 +989,4 @@ footer small {
 	}
 
 }
+
