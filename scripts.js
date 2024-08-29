@@ -32,20 +32,24 @@ export function initializeComments(memberId, supabase) {
         const newComment = document.createElement('div');
         newComment.className = 'card mb-3 shadow-sm';
         newComment.id = `comment-${comment.id}`;
-
+    
         newComment.innerHTML = `
             <div class="card-body">
                 <h5 class="card-title">${comment.nickname}</h5>
-                <p class="comment-text">${comment.content}</p>
+                <p class="comment-text">${convertNewlinesToBreaks(comment.content)}</p>
                 <div class="text-right">
                     <button class="btn btn-warning btn-sm mr-2" onclick="editComment(${comment.id})">Edit</button>
                     <button class="btn btn-danger btn-sm" onclick="deleteComment(${comment.id})">Delete</button>
                 </div>
             </div>
         `;
-
+    
         commentsDiv.appendChild(newComment);
         scrollToElement(newComment);
+    }
+
+    function convertNewlinesToBreaks(text) {
+        return text.replace(/\n/g, '<br>');
     }
 
     async function deleteComment(commentId) {
