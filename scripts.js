@@ -136,6 +136,7 @@ export function initializeComments(memberId, supabase) {
     // 전역 함수로 등록 (HTML에서 onclick 이벤트에서 사용)
     window.editComment = editComment;
     window.deleteComment = deleteComment;
+    window.addComment = addComment;
 
     // 초기 댓글 로드
     loadComments();
