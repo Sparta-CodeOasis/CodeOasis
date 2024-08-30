@@ -33,7 +33,7 @@
 
 /* /////////////////////////////
 
-	1. Basic Styles -> 자기 소개 margin 부과, 들여쓰기 포맷
+	1. Basic Styles -> 자기소개 구역 margin, 자기소개 텍스트 부분 - 들여쓰기, 폰트 크기 및 행간 조절
 	2. Navbar
 	3. Buttons
 	4. Hero
@@ -48,13 +48,14 @@
 
 
 
-   .btn-white-text {
+.btn-white-text {
     color: #ffffff !important;
 }
 
 main {
     padding-top: 40px;
 }
+
 li {
 	list-style: none;
 }
@@ -166,16 +167,37 @@ section {
 	border-top: 1px solid #edf1f2
 }
 
-/* 자기소개 margin */
+/* 멤버 페이지 내부 자기소개 구역 margin */
 .introduction {
     margin: 40px 100px 40px 100px;
 	/* background-color: #0191f0; */
 }
 
-/* 들여쓰기 */
+/* 멤버 페이지 내부 자기소개 텍스트 부분 - 들여쓰기, 폰트 크기 및 행간 조절*/
 .txtIndent {
-	text-indent: -20px;
-	margin-left: 25px;
+	text-indent: -1.47em;
+	margin-left: 1.7em;
+	/* text-indent: -20px;
+	margin-left: 25px; */
+	font-size: 1.035em;
+	line-height: 1.75em;
+	margin-top: -0.5em;
+	/* background-color: #007bbf; */
+}
+
+/* 팀 방명록 소개글 margin */
+.detail_container {
+	margin-top: 1.3em;
+}
+.detail_container2 {
+	margin-top: 2.5em;
+}
+
+/* 팀 방명록 소개글 margin 및 폰트 조절 */
+.detail_txt {
+	font-size: 1.5em;
+	line-height: 1.75em;
+	margin-top: 1em;
 }
 
 /* ==============================================
@@ -992,3 +1014,4 @@ footer small {
 	}
 
 }
+
