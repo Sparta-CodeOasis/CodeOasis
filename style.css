@@ -795,6 +795,27 @@ footer small {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .nav-custom-link {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+        border-bottom: 1px solid #EEE;
+    }
+
 	h2 {
 		font-size: 34px !important;
 		margin-bottom: 20px;
@@ -850,145 +871,4 @@ footer small {
 		float: left;
 		margin-top: 20px;
 	}
-}
-
-@media (max-width: 768px) {
-	#hero h1 {
-		font-size: 34px !important;
-		margin-bottom: 20px;
-	}
-
-	#hero p {
-		font-size: 20px !important;
-	}
-
-    .team-member {
-        margin-left: 10px; /* 태블릿 뷰에서 좌측 간격 */
-        margin-right: 10px; /* 태블릿 뷰에서 우측 간격 */
-    }
-}
-
-@media (max-width: 991px) {
-	.nav-right {
-		float: left;
-	}
-
-	.nav-custom-link {
-		border-bottom: 1px solid #EEE;
-	}
-
-	.navbar-nav {
-		width: 100%;
-	}
-
-	.navbar-nav .nav-link {
-		padding: 20px 0;
-		text-align: left;
-	}
-
-	.btn-demo-small {
-		background-color: #ffffff;
-		border: 0px;
-		padding: 0px;
-		box-shadow: none;
-
-	}
-
-	.btn-demo-small:hover {
-		background-color: #ffffff;
-		border: 0px;
-		padding: 0px;
-		box-shadow: none;
-
-	}
-
-	.btn-demo-small a {
-		color: #ffffff !important;
-	}
-
-	.nav-custom-link {
-		font-size: 13px;
-	}
-
-	.icon-mobile {
-		font-size: 18px;
-		float: right;
-	}
-
-	.navbar-collapse {
-		border-bottom: 1px solid #efefef;
-	}
-
-	.nav-logo-mobile {
-		margin: auto;
-		padding-right: 50px;
-	}
-
-	.nav-logo-desktop {
-		display: none;
-	}
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-	.icon-mobile {
-		display: none;
-	}
-
-	.nav-logo-mobile {
-		display: none;
-	}
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-	.hero-content {
-		margin-top: 100px;
-	}
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-	.pricing-box h3 {
-		font-size: 17px;
-	}
-
-	.pricing-box p {
-		font-size: 14px;
-	}
-
-	.pricing-box li {
-		font-size: 12px;
-	}
-
-	.btn-buy {
-		font-size: 12px;
-		padding: 15px 20px;
-	}
-
-	.btn-demo {
-		font-size: 12px;
-		padding: 15px 20px;
-	}
-
-	.profile-picture {
-		width: 50px;
-		height: 50px;
-	}
-
-	.testimonial-box h6 {
-		font-size: 14px;
-		margin-left: 10px;
-	}
-
-	.testimonial-box span {
-		font-size: 12px;
-	}
-
-	.testimonial-box small {
-		font-size: 12px;
-		margin-top: 4px;
-		margin-left: 10px;
-	}
-
 }
