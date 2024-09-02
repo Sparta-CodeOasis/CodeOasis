@@ -65,70 +65,71 @@
                 <textarea class="form-control" id="comment-input" rows="3" placeholder="응원의 메세지 남겨주세요"></textarea>      
             </div>
             <button class="btn btn-primary" onclick="addComment()">제출하기</button>
-            <section class="comments mt-5" id="comments">
-              <h3>코멘트</h3>
-              <!-- Comments will appear here -->
-          </section>
-      </main>
-  
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h5>리소스</h5>
-            <ul>
-              <li><a href="#">HTML 템플릿</a></li>
-              <li><a href="#">부트스트랩</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>커뮤니티</h5>
-            <ul>
-              <li><a href="#">포럼(없음)</a></li>
-              <li><a href="#">프로젝트(없음)</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>소개</h5>
-            <ul>
-              <li><a href="#">우리의 미션</a></li>
-              <li><a href="./introduce.html">팀</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>소셜 미디어</h5>
-            <p>허세, 장식용 글투성이 푸터</p>
-            <a href="#"><i class="icon ion-logo-facebook"></i></a>
-            <a href="#"><i class="icon ion-logo-twitter"></i></a>
-            <a href="#"><i class="icon ion-logo-linkedin"></i></a>
-            <a href="#"><i class="icon ion-logo-github"></i></a>
-          </div>
+        </section>
+
+        <section class="comments mt-5" id="comments">
+            <h3>코멘트</h3>
+            <!-- Comments will appear here -->
+        </section>
+    </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>리소스</h5>
+          <ul>
+            <li><a href="#">HTML 템플릿</a></li>
+            <li><a href="#">부트스트랩</a></li>
+          </ul>
         </div>
-        <div class="divider"></div>
-        <div class="row">
-          <div class="col-md-6 col-xs-12">
-              <small>2024 &copy; 모든 권리 코드오아시스가 보유. 코드오아시스</small>
-          </div>
+        <div class="col-md-3">
+          <h5>커뮤니티</h5>
+          <ul>
+            <li><a href="#">포럼(없음)</a></li>
+            <li><a href="#">프로젝트(없음)</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>소개</h5>
+          <ul>
+            <li><a href="#">우리의 미션</a></li>
+            <li><a href="./introduce.html">팀</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>소셜 미디어</h5>
+          <p>허세, 장식용 글투성이 푸터</p>
+          <a href="#"><i class="icon ion-logo-facebook"></i></a>
+          <a href="#"><i class="icon ion-logo-twitter"></i></a>
+          <a href="#"><i class="icon ion-logo-linkedin"></i></a>
+          <a href="#"><i class="icon ion-logo-github"></i></a>
         </div>
       </div>
-    </footer>
-      <script>
-      const memberId = 5; 
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script type="module">
-        import { initializeComments } from './scripts.js';
-        import config from './config.js'; 
-  
-        const supabase = window.supabase.createClient(config.supabaseUrl, config.supabaseKey);
-        document.addEventListener('DOMContentLoaded', () => {
-          initializeComments(memberId, supabase);
-        });
-      </script>
-  </body>
-  </html>
-  
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <small>2024 &copy; 모든 권리 코드오아시스가 보유. 코드오아시스</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script>
+    const memberId = 5; 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module">
+      import { initializeComments } from './scripts.js';
+      import config from './config.js'; 
+
+      const supabase = window.supabase.createClient(config.supabaseUrl, config.supabaseKey);
+      document.addEventListener('DOMContentLoaded', () => {
+      initializeComments(memberId, supabase);
+  });
+  </script>
+</body>
+</html>
